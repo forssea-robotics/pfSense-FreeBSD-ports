@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE packagegui SYSTEM "../schema/packages.dtd">
+<?xml-stylesheet type="text/xsl" href="../xsl/package.xsl"?>
+<packagegui>
+	<copyright>
+<![CDATA[
+/*
+ * gnss_lte.xml
+ */
+	]]>
+	</copyright>
+	<name>gnss_lte</name>
+	<version>%%PKGVERSION%%</version>
+	<title>GNSS LTE</title>
+	<include_file>/usr/local/pkg/gnss_lte.inc</include_file>
+	<menu>
+		<name>GNSS_LTE</name>
+		<section>Services</section>
+		<url>/pkg_edit.php?xml=gnss_lte.xml</url>
+	</menu>
+	<tabs>
+		<tab>
+			<text>Settings</text>
+			<url>/pkg_edit.php?xml=gnss_lte.xml</url>
+			<active/>
+		</tab>
+	</tabs>
+	<fields>
+		<field>
+			<fielddescr>Activate GNSS</fielddescr>
+			<fieldname>gnss_lte_gnss_on</fieldname>
+			<description>when GNSS is on, NTP by default take GPS as source and NMEA emitter can be used</description>
+			<type>checkbox</type>
+		</field>
+	</fields>
+	<custom_php_resync_config_command>
+		sync_package_gnss_lte();
+	</custom_php_resync_config_command>
+</packagegui>

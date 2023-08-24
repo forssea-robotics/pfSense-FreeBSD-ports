@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<pfsensepkgs>
+	<package>
+		<name>gnss_lte</name>
+		<descr><![CDATA[Long Term Evolution (LTE) and Global Navigation Satellite System (GNSS) package integrate Telit lm940 module, AT commands and NMEA emitter over the network layer.]]></descr>
+		<version>%%PKGVERSION%%</version>
+		<configurationfile>gnss_lte.xml</configurationfile>
+	</package>
+</pfsensepkgs>

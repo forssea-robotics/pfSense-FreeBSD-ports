@@ -1,0 +1,5 @@
+pkg/gnss_lte.xml
+pkg/gnss_lte.inc
+bin/frs_gnss_init.sh
+bin/gnss_lte.yml
+%%DATADIR%%/info.xml
